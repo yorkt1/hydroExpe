@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="navbar.js"></script>
+  <title>Tela da SA</title>
+</head>
+
+<body>
+  <div class="first-container">
+    <div class="nav-container">
+      <div class="nav-row">
+
+
+        <div class="nav-logo">
+          <img src="imagens/Hydro_Experience.png" alt="Logo">
+          <a href="#">
+            Hydro Experience
+          </a>
+        </div>
+
+        <div class="nav-controls">
+          <button class="menu_button"><i class="fas fa-user"></i> Perfil</button>
+          <button class="menu_button"><i class="fas fa-play"></i> Start</button>
+          <button class="menu_button"><i class="fas fa-pause"></i> Pause</button>
+          <button class="menu_button"><i class="fas fa-stop"></i> Stop</button>
+        </div>
+
+      </div>
+    </div>
+        <div class="cards">
+          <div class="card_umidade">
+            <h1 class="titulo_centralizado">Dados da Umidade ​💧​</h1>
+            <div class="numero_e_parametro" id="dadosUmidade" style="font-size: 45px;"></div>
+  
+            <button class="botao_alerta" onclick="sendCommand('1000')">
+              <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+              </svg>
+              <span style="font-size: 13px;">Alerta de Nível de Umidade</span>
+            </button>
+          </div>
+          <div class="card_temperatura">
+            
+            <h1 class="titulo_centralizado" style="font-size: 29px;">Dados da Temperatura ☀️</h1>
+            <div class="numero_e_parametro" id="dadosTemperatura" style="font-size: 45px;"></div>
+          </div>
+          <div class="card_distancia">
+            <h1 class="titulo_centralizado" style="font-size: 30px;">Dados da Distância 🚀</h1>
+            <div class="numero_e_parametro" id="dadosDistancia" style="font-size: 45px;"></div>
+          </div>
+        </div>
+      
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- <div class="cards">
+        <div class="card_umidade">
+          <h1 class="titulo_centralizado">Dados da Umidade ​💧​</h1>
+          <div class="numero_e_parametro" id="dadosUmidade" style="font-size: 45px;"></div>
+
+          <button class="botao_alerta" onclick="sendCommand('1000')">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span style="font-size: 13px;">Alerta de Nível de Umidade</span>
+          </button>
+        </div>
+        <div class="card_temperatura">
+          <h1 class="titulo_centralizado" style="font-size: 29px;">Dados da Temperatura ☀️</h1>
+          <div class="numero_e_parametro" id="dadosTemperatura" style="font-size: 45px;"></div>
+        </div>
+        <div class="card_distancia">
+          <h1 class="titulo_centralizado" style="font-size: 30px;">Dados da Distância 🚀</h1>
+          <div class="numero_e_parametro" id="dadosDistancia" style="font-size: 45px;"></div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h1>
+        Section
+      </h1>
+      <p>
+        The man in black fled across the desert and the gunslinger followed.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h1>
+        Section
+      </h1>
+      <p>
+        The man in black fled across the desert and the gunslinger followed.
+      </p>
+    </div>
+  </div>
+  <!-- <div class="container">
+    <div class="menu_bar">
+      <div class="logo">
+        <img src="imagens/Hydro_Experience.png" alt="">
+      </div>
+      <h1 class="menuBar">Hydro Experience</h1>
+      <button class="menu_button"><i class="fas fa-user"></i> Perfil</button>
+      <button class="menu_button"><i class="fas fa-play"></i> Start</button>
+      <button class="menu_button"><i class="fas fa-pause"></i> Pause</button>
+      <button class="menu_button"><i class="fas fa-stop"></i> Stop</button>
+    </div>
+
+    <div class="cards">
+      <div class="card_umidade">
+        <h1 class="titulo_centralizado">Dados da Umidade ​💧​</h1>
+        <div class="numero_e_parametro" id="dadosUmidade" style="font-size: 45px;"></div>
+
+        <button class="botao_alerta" onclick="sendCommand('1000')">
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span style="font-size: 13px;">Alerta de Nível de Umidade</span>
+        </button>
+      </div>
+      <div class="card_temperatura">
+        <h1 class="titulo_centralizado" style="font-size: 29px;">Dados da Temperatura ☀️</h1>
+        <div class="numero_e_parametro" id="dadosTemperatura" style="font-size: 45px;"></div>
+      </div>
+      <div class="card_distancia">
+        <h1 class="titulo_centralizado" style="font-size: 30px;">Dados da Distância 🚀</h1>
+        <div class="numero_e_parametro" id="dadosDistancia" style="font-size: 45px;"></div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="status">
+    <span class="offline">Offline</span>
+    <span class="circle offline"></span>
+    <span class="online">Online</span>
+    <span class="circle online"></span>
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
